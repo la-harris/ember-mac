@@ -13,14 +13,24 @@ find a free helpline at [findahelpline.com](https://findahelpline.com/).
 - A Mac with Apple silicon, running macOS 26 or later
 - 16 GB of memory or more for Ember's own model, or [LM Studio](https://lmstudio.ai) with a model of your choice
 
+Website: [la-harris.github.io/ember-mac](https://la-harris.github.io/ember-mac/)
+
 ## Install
 
-Download the latest `Ember-<version>.dmg` from [Releases](https://github.com/la-harris/ember-mac/releases), open it
-and drag Ember to Applications. On first run Ember asks where its model should run: its own model, downloaded once,
-or LM Studio. You can change this any time in Settings. Ember updates itself; you can turn automatic checks off in
-Settings > About.
+1. Download the latest `Ember-<version>.dmg` from [Releases](https://github.com/la-harris/ember-mac/releases/latest),
+   open it and drag Ember to Applications.
+2. Open Ember. The first time, macOS says it can't check the app for malicious software: click **Done**.
+3. Open **System Settings > Privacy & Security**, scroll to Security, and click **Open Anyway** next to Ember.
+4. From then on Ember opens like any other app. It keeps itself up to date (it asks first); Settings > About has the
+   switch.
+
+On first run Ember asks where its model should run. Ember's own model is coming soon; until then, install
+[LM Studio](https://lmstudio.ai), download a model (Gemma 4 works well) and start its server. You can change this any
+time in Settings.
 
 ## Privacy
 
 Ember has no servers and no accounts. It contacts the internet only to download its model once and, if you allow it,
 to check this page for updates.
+
+Made by LAH.
