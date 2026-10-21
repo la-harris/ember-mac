@@ -10,8 +10,6 @@
 <meta property="og:image" content="https://la-harris.github.io/ember-mac/media/ember-poster.jpg">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3CradialGradient id='g' cx='.4' cy='.35' r='.7'%3E%3Cstop offset='0' stop-color='%23FFD27A'/%3E%3Cstop offset='.5' stop-color='%23FF7A3D'/%3E%3Cstop offset='1' stop-color='%23E5484D'/%3E%3C/radialGradient%3E%3C/defs%3E%3Ccircle cx='16' cy='16' r='13' fill='url(%23g)'/%3E%3C/svg%3E">
 <style>
-  @font-face { font-family: "Fredoka"; src: url("fonts/fredoka-latin-700-normal.woff2") format("woff2"); font-weight: 700; font-display: swap; }
-  @font-face { font-family: "Fredoka"; src: url("fonts/fredoka-latin-400-normal.woff2") format("woff2"); font-weight: 400; font-display: swap; }
   :root {
     --bg: #FBF7F3; --card: #F3ECE6; --line: #E9DFD7; --ink: #2B221E; --ink2: #7A6C64;
     --accent: #F0642F; --accent2: #E5484D; --glow: rgba(255, 122, 61, .35);
@@ -29,7 +27,8 @@
   a { color: var(--accent); }
   img, video { display: block; max-width: 100%; }
   .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
-  h1, h2, h3, .brand span { font-family: "Fredoka", ui-rounded, -apple-system, sans-serif; font-weight: 700; }
+  h1, h2, h3 { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif; font-weight: 700; }
+  .brand span { font-family: ui-rounded, -apple-system, BlinkMacSystemFont, sans-serif; font-weight: 700; }
 
   /* Hero: warm night with the real app on the right */
   .hero { background: radial-gradient(90% 80% at 75% 30%, #5A1E2E 0%, #2A140D 45%, var(--night) 80%); color: var(--night-ink); overflow: hidden; }
@@ -42,7 +41,7 @@
     box-shadow: 0 0 40px rgba(255, 122, 61, .55); }
   nav a.small { color: var(--night-ink2); text-decoration: none; font-size: 15px; }
   .eyebrow { display: inline-block; font-size: 14px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #FFD2B0; margin: 0 0 18px; }
-  h1 { font-size: clamp(44px, 7vw, 84px); line-height: .98; letter-spacing: -2px; margin: 0 0 22px; }
+  h1 { font-size: clamp(42px, 6.6vw, 80px); line-height: 1.02; letter-spacing: -2px; margin: 0 0 22px; }
   h1 em { font-style: normal; color: #FF8A4C; }
   .lede { font-size: 20px; color: var(--night-ink2); max-width: 34ch; margin: 0 0 30px; }
   .cta { display: flex; flex-wrap: wrap; align-items: center; gap: 14px 18px; }
